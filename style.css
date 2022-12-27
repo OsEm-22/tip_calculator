@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+:root {
+  --space-mono: "Space Mono", monospace;
+  --strongCyan: hsl(172, 67%, 45%);
+  --veryDarkCyan: hsl(183, 100%, 15%);
+  --darkGrayishCyan: hsl(186, 14%, 43%);
+  --grayishCyan: hsl(184, 14%, 56%);
+  --lightGrayishCyan: hsl(185, 41%, 84%);
+  --veryLightGrayishCyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--space-mono);
+  font-weight: 700;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--lightGrayishCyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: var(--white);
+  width: fit-content;
+  height: 460px;
+  padding: 2rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+/************ LEFT SIDE STYLING ************/
+.left-side {
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.left-side input {
+  background-color: var(--veryLightGrayishCyan);
+  border: none;
+  font-size: 24px;
+
+  /* FOR THE SAME INPUT WIDTH */
+  width: 320px;
+}
+
+.left-side .left-col-2 input {
+  font-size: 24px;
+  width: 120px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+}
+
+.left-side .left-col-2 .btn-gp {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* width: fit-content; */
+}
+
+.btn-gp-1,
+.btn-gp-2 {
+  display: flex;
+  gap: 1rem;
+}
+
+.left-side .left-col-2 .btn-gp input[type="radio"] {
+  display: none;
+}
+
+.btn-gp label {
+  color: var(--white);
+  background-color: var(--veryDarkCyan);
+  font-size: 24px;
+  text-align: center;
+  width: 6rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.btn-gp input:checked + label {
+  color: var(--veryDarkCyan);
+  background-color: var(--strongCyan);
+}
+
+.left-side input[type="number"] {
+  color: var(--veryDarkCyan);
+  text-align: right;
+  cursor: pointer;
+}
+
+.left-side .btn-gp #customPercent {
+  width: 6rem;
+  height: 52px;
+}
+
+.left-side .left-col-3 .submit-btn {
+  color: var(--white);
+  background-color: var(--veryDarkCyan);
+  font-size: 24px;
+  width: 320px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.left-col-1,
+.left-col-2,
+.left-col-3 {
+  margin: 1rem 0;
+}
+
+/* PLACING THE PLACEHOLER TO THE RIGHT SIDE */
+.left-side input[type="number"]::placeholder {
+  font-size: 20px;
+  text-align: right;
+  color: var(--grayishCyan);
+}
+
+/******************* LEFT SIDE END *******************/
+
+/***************** RIGHT SIDE STYLING *****************/
+
+.right-side {
+  color: var(--strongCyan);
+  background-color: var(--veryDarkCyan);
+  height: 100%;
+  padding: 2rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right-col-1,
+.right-col-2 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.tip-amount-label,
+.total-person-label {
+  color: var(--white);
+}
+
+div.tip-amount-number,
+div.total-person-number {
+  font-size: 40px;
+}
+
+.upper-right-side small {
+  color: var(--grayishCyan);
+}
+
+.button-wrapper button {
+  font-size: 24px;
+  width: 320px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  color: var(--veryDarkCyan);
+  background-color: var(--strongCyan);
+  cursor: pointer;
+}
+
+.button-wrapper button:hover {
+  background-color: var(--lightGrayishCyan);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

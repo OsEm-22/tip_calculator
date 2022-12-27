@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!------------------------ CUSTOM CSS ------------------------>
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--------------------- LEFT SIDE START --------------------->
+      <div class="left-side">
+        <form class="myForm">
+          <div class="left-col-1">
+            <label for="bill">Bill</label> <br />
+            <input type="number" name="bill" id="bill" placeholder="0" />
+          </div>
+          <div class="left-col-2">
+            <label for="tip-percent">Select Tip %</label>
+            <br />
+            <div class="btn-gp">
+              <div class="btn-gp-1">
+                <input type="radio" name="percent" value="5" id="five" />
+                <label for="five">5%</label>
+                <input type="radio" name="percent" value="10" id="ten" />
+                <label for="ten">10%</label>
+                <input type="radio" name="percent" value="15" id="fifteen" />
+                <label for="fifteen">15%</label>
+              </div>
+              <div class="btn-gp-2">
+                <input type="radio" name="percent" value="25" id="twentyFive" />
+                <label for="twentyFive">25%</label>
+                <input type="radio" name="percent" value="50" id="fifty" />
+                <label for="fifty">50%</label>
+                <input type="number" id="customPercent" placeholder="Custom" />
+              </div>
+            </div>
+          </div>
+          <div class="left-col-3">
+            <label for="people-amount">Number of People</label>
+            <br />
+            <input type="number" id="people" placeholder="0" /> <br />
+            <input type="submit" value="submit" class="submit-btn" />
+          </div>
+        </form>
+      </div>
+      <!--------------------- LEFT SIDE END --------------------->
+
+      <!--------------------- RIGHT SIDE START --------------------->
+      <div class="right-side">
+        <div class="upper-right-side">
+          <div class="right-col-1">
+            <div class="tip-amount-label">
+              Tip Amount <br />
+              <small>/ person</small>
+            </div>
+            <div class="tip-amount-number">$0.00</div>
+          </div>
+          <div class="right-col-2">
+            <div class="total-person-label">
+              Total <br />
+              <small>/ person</small>
+            </div>
+            <div class="total-person-number">$0.00</div>
+          </div>
+        </div>
+        <div class="button-wrapper">
+          <button type="button" id="reset-btn">RESET</button>
+        </div>
+      </div>
+      <!--------------------- RIGHT SIDE END --------------------->
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
